@@ -1,4 +1,8 @@
 
+if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
+	return
+end
+
 --[[     History Module     ]]--
 
 local _, BCM = ...
@@ -98,4 +102,3 @@ BCM.earlyModules[#BCM.earlyModules+1] = function()
 		BCM.Events:RegisterEvent("LOADING_SCREEN_ENABLED")
 	end
 end
-
