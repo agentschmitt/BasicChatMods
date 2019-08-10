@@ -13,7 +13,7 @@ BCM.modules[#BCM.modules+1] = function()
 	ChatFrameMenuButton:HookScript("OnShow", hideFunc)
 	ChatFrameMenuButton:Hide() --Hide the chat shortcut button for emotes/languages/etc
 	ChatFrameChannelButton:HookScript("OnShow", hideFunc)
-	ChatFrameChannelButton:Hide() --Hide the chat button for channels
+	ChatFrameChannelButton:Hide() --Hide the chat shortcut button for emotes/languages/etc
 
 	BCM.chatFuncsPerFrame[#BCM.chatFuncsPerFrame+1] = function(_, n)
 		local btnFrame = _G[n.."ButtonFrame"]
